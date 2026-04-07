@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACS Guidance Issues — NICE Cardiology Review</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/page-components.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span class="icon">N</span>
+        NICE Cardiology Review
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heart-failure.html">Heart Failure</a></li>
+        <li><a href="acs.html">Acute Coronary Syndromes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Acute Coronary Syndromes</div>
+      <h1>ACS Guidance Issues</h1>
+      <p class="lead">
+        A data-driven analysis of where NICE ACS guidelines lag behind trial evidence
+        in antiplatelet strategy, lipid management, diagnostic pathways, and rehabilitation.
+      </p>
+      <div class="guideline-refs">
+        <span class="guideline-ref">NICE NG185</span>
+        <span class="guideline-ref">NICE CG94 (legacy)</span>
+        <span class="guideline-ref">NICE CG95 (legacy)</span>
+        <span class="guideline-ref">ESC 2023 ACS Guidelines</span>
+        <span class="guideline-ref">AHA/ACC 2021 Chest Pain Guidelines</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Summary Stats -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="key-stat-grid">
+        <div class="key-stat-box">
+          <div class="big-num red">8 yrs</div>
+          <div class="stat-label">IMPROVE-IT (2014) to NICE lipid target update</div>
+        </div>
+        <div class="key-stat-box">
+          <div class="big-num">18,144</div>
+          <div class="stat-label">Patients in IMPROVE-IT alone</div>
+        </div>
+        <div class="key-stat-box">
+          <div class="big-num teal">0/1h</div>
+          <div class="stat-label">ESC rapid rule-out algorithm (not fully in NICE)</div>
+        </div>
+        <div class="key-stat-box">
+          <div class="big-num red">No</div>
+          <div class="stat-label">NICE pathway for MINOCA</div>
+        </div>
+        <div class="key-stat-box">
+          <div class="big-num">50%</div>
+          <div class="stat-label">Cardiac rehab completion rate in England</div>
+        </div>
+        <div class="key-stat-box">
+          <div class="big-num teal">&lt;1.4</div>
+          <div class="stat-label">ESC LDL target (mmol/L) — NICE less specific</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar & Issue Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="Filter by severity">
+        <label>Filter by severity:</label>
+        <button class="filter-btn active" data-severity="all" aria-pressed="true">All Issues (6)</button>
+        <button class="filter-btn" data-severity="critical" aria-pressed="false">Critical (2)</button>
+        <button class="filter-btn" data-severity="moderate" aria-pressed="false">Moderate (3)</button>
+        <button class="filter-btn" data-severity="informational" aria-pressed="false">Informational (1)</button>
+      </div>
+      <div id="filter-live" class="sr-only" aria-live="polite"></div>
+
+      <div class="issue-list">
+
+        <!-- Issue 1: DAPT Duration -->
+        <div class="issue-card" data-severity="moderate">
+          <div class="issue-card-header">
+            <span class="severity-badge moderate">Moderate</span>
+            <div class="issue-card-title">
+              <h3>DAPT Duration Rigidity</h3>
+              <p>Fixed 12-month DAPT with no risk-stratified shortening or extension</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>Trial Evidence for Risk-Stratified DAPT</h4>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>Trial/Tool</th><th>N</th><th>Finding</th><th>Clinical Implication</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>TWILIGHT</strong></td>
+                      <td>7,119</td>
+                      <td>Ticagrelor monotherapy after 3-month DAPT reduced BARC 2&ndash;5 bleeding by 44% (HR 0.56)</td>
+                      <td>High-bleeding-risk patients benefit from shortened DAPT</td>
+                    </tr>
+                    <tr>
+                      <td><strong>TICO</strong></td>
+                      <td>3,056</td>
+                      <td>3-month DAPT &rarr; ticagrelor mono was non-inferior for NACE</td>
+                      <td>Short DAPT safe with potent P2Y12i</td>
+                    </tr>
+                    <tr>
+                      <td><strong>PRECISE-DAPT score</strong></td>
+                      <td>14,963</td>
+                      <td>Score &ge;25: shortened DAPT reduces bleeding without excess ischaemia</td>
+                      <td>Validated risk stratification tool</td>
+                    </tr>
+                    <tr>
+                      <td><strong>DAPT Score</strong></td>
+                      <td>11,648</td>
+                      <td>Score &ge;2: extended DAPT (30 months) reduces MI/stent thrombosis</td>
+                      <td>High ischaemic risk benefits from prolongation</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-top:0.75rem;">
+                  <strong>Meta-analysis of short DAPT trials</strong> (Valgimigli et al., LANCET 2021, 16 RCTs, n=35,965):
+                  <span class="stat-highlight">Short DAPT (&le;6 mo): HR 0.59 (0.48&ndash;0.73) for major bleeding</span>,
+                  with <span class="stat-highlight amber-hl">HR 1.07 (0.91&ndash;1.26) for MACE (non-significant)</span>
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>NICE vs ESC vs AHA/ACC</h4>
+                <div class="comparison-row">
+                  <div class="comparison-cell nice-col">
+                    <h5>NICE NG185</h5>
+                    <ul>
+                      <li>12-month DAPT as default</li>
+                      <li>No mention of PRECISE-DAPT or DAPT score</li>
+                      <li>No shortened DAPT pathway</li>
+                      <li>No extension criteria</li>
+                    </ul>
+                  </div>
+                  <div class="comparison-cell esc-col">
+                    <h5>ESC 2023</h5>
+                    <ul>
+                      <li>Default 12 months BUT with explicit shortening/extension criteria</li>
+                      <li>PRECISE-DAPT score for <strong>bleeding risk</strong></li>
+                      <li>3-month DAPT + P2Y12i mono for high bleeding risk (Class IIa)</li>
+                      <li>Extended DAPT for high ischaemic/low bleeding risk</li>
+                    </ul>
+                  </div>
+                  <div class="comparison-cell aha-col">
+                    <h5>AHA/ACC 2021</h5>
+                    <ul>
+                      <li>Risk-stratified approach</li>
+                      <li>1&ndash;3 month DAPT considered for high bleeding risk</li>
+                      <li>Extended &gt;12 months for high ischaemic risk</li>
+                      <li>De-escalation strategies endorsed</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Clinical Impact</h4>
+                <p>
+                  A one-size-fits-all 12-month DAPT exposes high-bleeding-risk patients (elderly, renal impairment,
+                  prior GI bleeding) to unnecessary haemorrhagic risk, while denying high-ischaemic-risk patients
+                  the benefit of extended therapy. With <span class="stat-highlight warning">~100,000 PCI procedures/year in England</span>,
+                  even a 5% misclassification rate affects thousands.
+                </p>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li>Integrate the <strong>PRECISE-DAPT score</strong> into the NICE pathway as the default bleeding risk assessment</li>
+                  <li>Provide an explicit <strong>shortened DAPT pathway</strong> (1&ndash;3 months + P2Y12i mono) for score &ge;25</li>
+                  <li>Define <strong>extension criteria</strong> (DAPT score &ge;2, no bleeding events, prior MI) for 24&ndash;30 months</li>
+                  <li>Include P2Y12i monotherapy (dropping aspirin) as a <strong>de-escalation strategy</strong> after 1&ndash;3 months</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 2: Troponin Algorithm -->
+        <div class="issue-card" data-severity="moderate">
+          <div class="issue-card-header">
+            <span class="severity-badge moderate">Moderate</span>
+            <div class="issue-card-title">
+              <h3>Troponin Algorithm Gaps</h3>
+              <p>ESC 0/1h and 0/2h rapid rule-out pathways not fully integrated into NICE</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>Evidence for Rapid Rule-Out</h4>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>Study</th><th>NCT ID</th><th>N</th><th>Sensitivity</th><th>NPV</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>PRESC1SE-MI</strong></td>
+                      <td class="nct">NCT05649384</td>
+                      <td>64,374</td>
+                      <td><span class="stat-highlight">99.8%</span></td>
+                      <td>99.9%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>HISTORIC</strong></td>
+                      <td class="nct">NCT03005158</td>
+                      <td>31,492</td>
+                      <td><span class="stat-highlight">99.6%</span></td>
+                      <td>99.8%</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ESC 0/1h Validation</strong></td>
+                      <td>&mdash;</td>
+                      <td>&gt;30,000</td>
+                      <td>99.0&ndash;99.5%</td>
+                      <td>&gt;99.5%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--gray-500);">
+                  The ESC 0/1h algorithm rules out MI within 1 hour for ~60% of chest pain presentations,
+                  with an NPV &gt;99.5%. The 0/2h pathway extends to assays without validated 1h cut-offs.
+                  Both use <strong>assay-specific absolute thresholds + delta changes</strong> rather than
+                  the 99th percentile approach alone.
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>NICE Position (NG185)</h4>
+                <p>
+                  NICE NG185 recommends hs-cTn at presentation and <strong>3 hours after symptom onset</strong> (or repeat at
+                  3 hours if initial sample &lt;3 hours from onset). NG185 does allow single-sample rule-out when hs-cTn is
+                  below the limit of detection AND presentation is &gt;3h from onset. However, the pathway lacks a validated
+                  <strong>rapid delta-change algorithm</strong> (0/1h or 0/2h) using assay-specific absolute thresholds &mdash;
+                  the key feature of the ESC approach that enables rule-out within 1 hour for ~60% of presentations.
+                </p>
+                <div class="gap-meter">
+                  <span class="gap-meter-label">Time to rule-out</span>
+                  <div class="gap-meter-bar"><div class="gap-meter-fill moderate" style="width:100%"></div></div>
+                  <span class="gap-meter-value" style="color:var(--amber)">3h (NICE)</span>
+                </div>
+                <div class="gap-meter">
+                  <span class="gap-meter-label">ESC target</span>
+                  <div class="gap-meter-bar"><div class="gap-meter-fill low" style="width:33%"></div></div>
+                  <span class="gap-meter-value" style="color:var(--teal)">1h (ESC)</span>
+                </div>
+                <p style="font-size:0.85rem; color:var(--gray-500); margin-top:0.5rem;">
+                  The 2-hour difference per patient, multiplied by ~500,000 chest pain ED attendances/year
+                  in England, represents substantial ED capacity and patient experience impact.
+                </p>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Operational Impact</h4>
+                <p>
+                  With <span class="stat-highlight warning">~500,000 ED chest pain attendances/year</span> and ~60% eligible
+                  for rapid rule-out, the 2-hour difference between NICE (0/3h) and ESC (0/1h) pathways
+                  equates to <strong>~600,000 patient-hours of unnecessary ED occupancy annually</strong>.
+                  This has direct cost, crowding, and patient experience implications in already-overwhelmed
+                  NHS emergency departments.
+                </p>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li>Adopt the <strong>ESC 0/1h algorithm</strong> for validated hs-cTn assays (Roche Elecsys, Abbott Architect, Siemens Atellica)</li>
+                  <li>Provide the <strong>0/2h pathway</strong> as fallback for assays without validated 1h cut-offs</li>
+                  <li>Specify <strong>assay-specific absolute and delta thresholds</strong> (not just 99th percentile)</li>
+                  <li>Include a <strong>direct discharge pathway</strong> for very-low-risk patients (hs-cTnT &lt;5 ng/L at presentation, low HEART score)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 3: Lipid Targets -->
+        <div class="issue-card" data-severity="critical">
+          <div class="issue-card-header">
+            <span class="severity-badge critical">Critical</span>
+            <div class="issue-card-title">
+              <h3>Conservative Lipid Targets Post-ACS</h3>
+              <p>NICE historically slow to adopt aggressive LDL targets and combination lipid therapy</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>Landmark Lipid Trials Post-ACS</h4>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>Trial</th><th>NCT ID</th><th>N</th><th>Published</th><th>Key Result</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>IMPROVE-IT</strong></td>
+                      <td class="nct">NCT00202878</td>
+                      <td>18,144</td>
+                      <td>Jun 2015</td>
+                      <td>Ezetimibe + statin: <span class="stat-highlight">HR 0.936 (0.89&ndash;0.99)</span> for MACE; LDL 1.4 vs 1.8 mmol/L</td>
+                    </tr>
+                    <tr>
+                      <td><strong>FOURIER</strong></td>
+                      <td class="nct">NCT01764633</td>
+                      <td>27,564</td>
+                      <td>Mar 2017</td>
+                      <td>Evolocumab: <span class="stat-highlight">HR 0.85 (0.79&ndash;0.92)</span>; LDL to 0.78 mmol/L</td>
+                    </tr>
+                    <tr>
+                      <td><strong>ODYSSEY Outcomes</strong></td>
+                      <td class="nct">NCT01663402</td>
+                      <td>18,924</td>
+                      <td>Nov 2018</td>
+                      <td>Alirocumab: <span class="stat-highlight">HR 0.85 (0.78&ndash;0.93)</span>; post-ACS population</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-top:0.75rem;">
+                  <strong>CTT meta-analysis (Lancet 2010, 26 RCTs, n=170,000):</strong>
+                  Every 1 mmol/L reduction in LDL reduces major vascular events by
+                  <span class="stat-highlight">22% (RR 0.78, 95% CI 0.76&ndash;0.80)</span>.
+                  No lower threshold identified &mdash; &ldquo;lower is better&rdquo; is now established.
+                </p>
+                <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--gray-500);">
+                  IMPROVE-IT completed September 2014 with 18,144 patients. The trial definitively proved
+                  that adding ezetimibe to statins post-ACS reduces events. Yet NICE took years to integrate
+                  this into practical lipid management pathways.
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>Timeline: Evidence vs NICE Response</h4>
+                <div class="timeline">
+                  <div class="timeline-event trial">
+                    <div class="year">Nov 2014</div>
+                    <div class="event-title">IMPROVE-IT results presented (AHA; NEJM Jun 2015)</div>
+                    <div class="event-detail">n=18,144; ezetimibe benefit proven in ACS; LDL 1.4 mmol/L achievable</div>
+                  </div>
+                  <div class="timeline-event trial">
+                    <div class="year">Mar 2017</div>
+                    <div class="event-title">FOURIER published (n=27,564)</div>
+                    <div class="event-detail">Evolocumab achieves LDL 0.78 mmol/L; 15% MACE reduction</div>
+                  </div>
+                  <div class="timeline-event trial">
+                    <div class="year">Nov 2018</div>
+                    <div class="event-title">ODYSSEY Outcomes (n=18,924)</div>
+                    <div class="event-detail">Alirocumab post-ACS: 15% MACE reduction + mortality signal</div>
+                  </div>
+                  <div class="timeline-event esc">
+                    <div class="year">Sep 2019</div>
+                    <div class="event-title">ESC Dyslipidaemia Guidelines</div>
+                    <div class="event-detail">LDL &lt;1.4 mmol/L AND &ge;50% reduction for very high risk (Class I, Level A)</div>
+                  </div>
+                  <div class="timeline-event nice">
+                    <div class="year">2022&ndash;2023</div>
+                    <div class="event-title">NICE gradually updates</div>
+                    <div class="event-detail">TAs for PCSK9i; lipid CG181 update slow; NG185 still conservative on targets</div>
+                  </div>
+                </div>
+                <div class="gap-meter">
+                  <span class="gap-meter-label">IMPROVE-IT &rarr; NICE integration</span>
+                  <div class="gap-meter-bar"><div class="gap-meter-fill critical" style="width:95%"></div></div>
+                  <span class="gap-meter-value" style="color:var(--red)">~8 yrs</span>
+                </div>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Scale of the Problem</h4>
+                <p>
+                  With ~70,000 ACS admissions/year in England, conservative LDL targets mean tens of thousands
+                  of very-high-risk patients are not reaching optimal lipid levels. The CTT data shows
+                  <strong>each 1 mmol/L LDL reduction prevents 22 major vascular events per 1,000 patients
+                  over 5 years</strong>. At the population level:
+                </p>
+                <div class="key-stat-grid" style="margin:0.75rem 0;">
+                  <div class="key-stat-box">
+                    <div class="big-num red">~70K</div>
+                    <div class="stat-label">ACS admissions/year (England)</div>
+                  </div>
+                  <div class="key-stat-box">
+                    <div class="big-num">170,000</div>
+                    <div class="stat-label">Patients in CTT Collaboration meta-analysis</div>
+                  </div>
+                  <div class="key-stat-box">
+                    <div class="big-num teal">22%</div>
+                    <div class="stat-label">MACE reduction per 1 mmol/L LDL lowering</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li>Adopt <strong>LDL &lt;1.4 mmol/L AND &ge;50% reduction</strong> as the target for all post-ACS patients (aligned with ESC)</li>
+                  <li>Recommend <strong>ezetimibe add-on</strong> at 4&ndash;6 weeks if target not reached on maximum-tolerated statin</li>
+                  <li>Provide a clear <strong>escalation pathway</strong>: statin &rarr; + ezetimibe &rarr; + PCSK9i/inclisiran, with review at each step</li>
+                  <li>Mandate <strong>lipid check at 4&ndash;6 weeks post-ACS</strong> (not just &ldquo;3 months&rdquo;) to enable timely intensification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 4: MINOCA -->
+        <div class="issue-card" data-severity="critical">
+          <div class="issue-card-header">
+            <span class="severity-badge critical">Critical</span>
+            <div class="issue-card-title">
+              <h3>MINOCA: No Structured Pathway</h3>
+              <p>Myocardial infarction with non-obstructive coronary arteries affects 5&ndash;10% of MI patients with no NICE guidance</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>The Evidence Landscape</h4>
+                <p>
+                  MINOCA accounts for <strong>5&ndash;10% of all acute MI presentations</strong> (estimated 3,500&ndash;7,000/year
+                  in England). It is not a diagnosis but a <strong>working syndrome</strong> requiring investigation
+                  for underlying mechanisms:
+                </p>
+                <ul>
+                  <li><strong>Coronary spasm</strong> (vasospastic angina) &mdash; 15&ndash;30% of MINOCA cases</li>
+                  <li><strong>Plaque disruption</strong> (erosion/rupture with non-obstructive CAD) &mdash; 20&ndash;30%</li>
+                  <li><strong>Myocarditis</strong> (troponin-positive, angiographically normal) &mdash; 6&ndash;33% (varies with CMR availability)</li>
+                  <li><strong>Takotsubo cardiomyopathy</strong> &mdash; 5&ndash;15%</li>
+                  <li><strong>Other</strong> (thrombophilia, embolism, SCAD) &mdash; 5&ndash;10%</li>
+                </ul>
+                <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--gray-500);">
+                  1-year MACE rate in MINOCA: 5&ndash;10% (VIRGO study, n=2,690). Not benign.
+                  CMR identifies the cause in ~87% of cases (Pathak et al., JACC 2019).
+                  The <strong>MRA-MI trial</strong> (NCT05198791, n=400) is currently recruiting for MRA in MINOCA &mdash;
+                  the first dedicated RCT in this population.
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>NICE Position</h4>
+                <p>
+                  NICE NG185 contains <strong>no mention of MINOCA</strong> as a clinical entity. There is:
+                </p>
+                <ul>
+                  <li>No definition or recognition of the syndrome</li>
+                  <li>No diagnostic pathway (CMR, provocative testing, intravascular imaging)</li>
+                  <li>No treatment guidance by underlying mechanism</li>
+                  <li>No follow-up or secondary prevention recommendations</li>
+                </ul>
+                <p style="margin-top:0.5rem;">
+                  In contrast, the <strong>ESC 2023 ACS guidelines</strong> include a dedicated MINOCA section with
+                  a diagnostic algorithm (CMR within 2 weeks, consider provocative testing), mechanism-specific
+                  treatment, and follow-up recommendations.
+                </p>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Patient Impact</h4>
+                <p>
+                  Without NICE guidance, MINOCA patients are often:
+                </p>
+                <ul>
+                  <li><strong>Discharged without investigation</strong> (&ldquo;normal coronaries, reassured&rdquo;)</li>
+                  <li>Given <strong>standard ACS secondary prevention</strong> (aspirin, statin, ACEi, BB) which may be inappropriate for myocarditis or Takotsubo</li>
+                  <li><strong>Not referred for CMR</strong> &mdash; the single most important investigation</li>
+                  <li>Left with diagnostic uncertainty and psychological distress</li>
+                </ul>
+                <div class="key-stat-grid" style="margin:0.75rem 0;">
+                  <div class="key-stat-box">
+                    <div class="big-num red">5&ndash;10%</div>
+                    <div class="stat-label">of all MI presentations are MINOCA</div>
+                  </div>
+                  <div class="key-stat-box">
+                    <div class="big-num">87%</div>
+                    <div class="stat-label">CMR diagnostic yield in MINOCA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li><strong>Recognise MINOCA</strong> as a distinct clinical entity in NG185 with a dedicated section</li>
+                  <li>Mandate <strong>CMR within 14 days</strong> of presentation for all MI patients with non-obstructive coronaries</li>
+                  <li>Provide <strong>mechanism-specific treatment pathways</strong>: calcium channel blockers for spasm, standard ACS Rx for plaque disruption, avoid BBs/anticoagulation in Takotsubo, immunosuppression consideration in myocarditis</li>
+                  <li>Include a <strong>MINOCA follow-up pathway</strong> with cardiology review at 6 weeks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 5: Anti-thrombotic Selection -->
+        <div class="issue-card" data-severity="moderate">
+          <div class="issue-card-header">
+            <span class="severity-badge moderate">Moderate</span>
+            <div class="issue-card-title">
+              <h3>Limited Anti-thrombotic Selection Guidance</h3>
+              <p>Ticagrelor vs prasugrel vs clopidogrel: NICE lacks nuanced selection criteria</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>Key Comparative Evidence</h4>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>Trial</th><th>N</th><th>Comparison</th><th>Key Finding</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>ISAR-REACT 5</strong></td>
+                      <td>4,018</td>
+                      <td>Prasugrel vs ticagrelor (ACS+PCI)</td>
+                      <td><span class="stat-highlight">Prasugrel superior: HR 0.84 (0.71&ndash;0.98)</span> for death/MI/stroke without significantly increased bleeding</td>
+                    </tr>
+                    <tr>
+                      <td><strong>PLATO</strong></td>
+                      <td>18,624</td>
+                      <td>Ticagrelor vs clopidogrel</td>
+                      <td>Ticagrelor: HR 0.84 for CV death/MI/stroke; increased non-CABG bleeding</td>
+                    </tr>
+                    <tr>
+                      <td><strong>TRITON-TIMI 38</strong></td>
+                      <td>13,608</td>
+                      <td>Prasugrel vs clopidogrel</td>
+                      <td>Prasugrel: HR 0.81; excess bleeding in age &ge;75, weight &lt;60kg, prior stroke</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p style="margin-top:0.75rem; font-size:0.85rem; color:var(--gray-500);">
+                  ISAR-REACT 5 was the first head-to-head RCT of prasugrel vs ticagrelor. It favoured prasugrel
+                  in ACS patients proceeding to PCI. ESC 2023 now recommends <strong>prasugrel over ticagrelor</strong>
+                  in STEMI patients undergoing PCI (Class I, Level B).
+                  <strong>Important limitations:</strong> ISAR-REACT 5 was <strong>open-label</strong> (not blinded),
+                  and the pre-treatment strategy differed between arms (ticagrelor arm pre-treated per protocol,
+                  potentially disadvantaging it). These limitations contributed to the Level B evidence grading.
+                  The result should be interpreted alongside the totality of evidence.
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>Current NICE Position</h4>
+                <p>
+                  NICE NG185 recommends prasugrel or ticagrelor but provides <strong>limited guidance on
+                  choosing between them</strong>. The recommendation essentially leaves selection to individual
+                  clinician preference without risk-stratification tools. Key gaps:
+                </p>
+                <ul>
+                  <li>No preference for prasugrel in STEMI+PCI (per ISAR-REACT 5)</li>
+                  <li>No explicit clopidogrel criteria for medically-managed NSTEMI</li>
+                  <li>No de-escalation pathway (potent P2Y12i &rarr; clopidogrel at 1&ndash;3 months)</li>
+                  <li>No platelet function testing guidance for non-responders</li>
+                </ul>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Clinical Gap</h4>
+                <p>
+                  Without clear selection criteria, UK practice is heterogeneous. Some centres default to
+                  ticagrelor (driven by PLATO), others to prasugrel (driven by ISAR-REACT 5), and many
+                  use clopidogrel for cost reasons without documented clinical justification. This
+                  variation affects both efficacy and safety outcomes.
+                </p>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li>Recommend <strong>prasugrel as preferred P2Y12i for STEMI+PCI</strong> (per ISAR-REACT 5, aligned with ESC)</li>
+                  <li>Specify <strong>ticagrelor for medically-managed ACS</strong> and NSTEMI without definite PCI plan</li>
+                  <li>Define <strong>clopidogrel indications</strong>: oral anticoagulant use, age &ge;75, weight &lt;60kg, prior stroke</li>
+                  <li>Include a <strong>de-escalation protocol</strong>: consider switching potent P2Y12i to clopidogrel at 1&ndash;3 months if high bleeding risk develops</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issue 6: Cardiac Rehabilitation -->
+        <div class="issue-card" data-severity="informational">
+          <div class="issue-card-header">
+            <span class="severity-badge informational">Informational</span>
+            <div class="issue-card-title">
+              <h3>Cardiac Rehabilitation: Access &amp; Completion Barriers</h3>
+              <p>Completion rates ~50% with significant geographic and socioeconomic variation</p>
+            </div>
+            <span class="expand-icon">&#9660;</span>
+          </div>
+          <div class="issue-card-body">
+            <div class="issue-card-body-inner">
+              <div class="detail-block evidence">
+                <h4>Evidence for Cardiac Rehabilitation</h4>
+                <p>
+                  <strong>Cochrane meta-analysis</strong> (Anderson et al., 2016, 63 RCTs, n=14,486):
+                </p>
+                <ul>
+                  <li>Exercise-based CR reduces <strong>CV mortality by 26%</strong> (RR 0.74, 0.64&ndash;0.86)</li>
+                  <li>Reduces hospital readmissions by 18% (RR 0.82, 0.70&ndash;0.96)</li>
+                  <li>Improves quality of life across all domains</li>
+                  <li><strong>NNT = 37</strong> to prevent one CV death over 12 months</li>
+                </ul>
+                <p style="margin-top:0.75rem;">
+                  <strong>NACR Annual Report 2023:</strong> Only <span class="stat-highlight warning">50% completion rate</span>
+                  nationally. Uptake varies from &lt;20% to &gt;80% by region. Patients from deprived areas,
+                  ethnic minorities, and women are under-represented.
+                </p>
+              </div>
+
+              <div class="detail-block nice-position">
+                <h4>NICE Position</h4>
+                <p>
+                  NICE recommends cardiac rehabilitation (CG172, now largely superseded by NG185) but the guidance is
+                  <strong>aspirational rather than operational</strong>:
+                </p>
+                <ul>
+                  <li>&ldquo;Offer personalised cardiac rehabilitation&rdquo; &mdash; no mandated referral pathway</li>
+                  <li>No quality standards for programme content or duration</li>
+                  <li>No digital/home-based alternatives explicitly endorsed</li>
+                  <li>No equity targets or reporting requirements</li>
+                  <li>No guidance on early (phase 1) in-hospital mobilisation</li>
+                </ul>
+              </div>
+
+              <div class="detail-block problem">
+                <h4>Access Gap</h4>
+                <p>
+                  With ~100,000 eligible ACS patients/year and a 50% completion rate,
+                  <span class="stat-highlight warning">~50,000 patients annually miss proven CV mortality reduction</span>.
+                  The geographic lottery is stark: a patient in the North East may wait 12 weeks for a programme;
+                  a patient in London may have multiple options within days.
+                </p>
+              </div>
+
+              <div class="detail-block suggestion">
+                <h4>Suggested Improvement</h4>
+                <ul>
+                  <li>Mandate <strong>automatic referral at discharge</strong> (opt-out, not opt-in) for all ACS, HF, and post-surgical patients</li>
+                  <li>Explicitly endorse <strong>validated digital CR programmes</strong> (e.g., Rehab Guru, REACH-HF) as equivalent alternatives for patients who cannot attend centre-based programmes</li>
+                  <li>Set a <strong>national completion target of &ge;65%</strong> with NHS England reporting</li>
+                  <li>Include <strong>equity KPIs</strong>: completion rates by IMD quintile, ethnicity, sex, and age</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /issue-list -->
+    </div>
+  </section>
+
+  <!-- NYT-Style Data Visualisations -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Data, Visualised</h2>
+        <p>Every chart computed client-side from trial data and published audit metrics.</p>
+      </div>
+      <div id="nyt-charts-acs"></div>
+    </div>
+  </section>
+
+  <!-- Published Literature: Peer-Reviewed Critiques -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Published Peer-Reviewed Evidence</h2>
+        <p>Independent critiques from validated journals supporting the issues identified above.</p>
+      </div>
+      <div class="issue-list" style="gap:1rem;">
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">Post-ACS Lipid Management: A Missed Opportunity</h4>
+          <p><strong>Khan Z, Rakhit R.</strong> Secondary prevention lipid management following ACS: a missed opportunity?
+            <em>British Journal of Cardiology</em>, 2022. DOI: 10.5837/bjc.2022.035</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            Identified a <strong>significant gap between NICE (LDL &lt;1.8 mmol/L) and ESC (&lt;1.4 mmol/L)</strong> targets.
+            NICE recommends lipid recheck at <strong>3 months</strong> vs ESC's <strong>4&ndash;6 weeks</strong>, creating delayed intensification.
+            EUROASPIRE V showed <span class="stat-highlight warning">only 30% of post-ACS patients</span> achieved LDL &lt;1.8 mmol/L at 1 year &mdash;
+            and this was measured against the <em>less stringent</em> NICE target. The gap between evidence and practice represents
+            a &ldquo;missed opportunity&rdquo; for secondary prevention.
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">DAPT De-Escalation: International Expert Consensus</h4>
+          <p><strong>Valgimigli M, Gragnano F, Branca G, et al.</strong> De-escalation or abbreviation of DAPT in ACS and PCI: Consensus Statement.
+            <em>Nature Reviews Cardiology</em>, 2023. DOI: 10.1038/s41569-023-00901-2</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            International panel of coronary thrombosis experts endorsed <strong>risk-stratified DAPT duration</strong> using validated scores.
+            Recommended <strong>shortened DAPT (1&ndash;3 months) + P2Y12i monotherapy</strong> for high-bleeding-risk patients,
+            and <strong>extended DAPT (24&ndash;30 months)</strong> for high-ischaemic-risk patients. This consensus
+            directly contradicts NICE NG185's fixed 12-month approach. The authors note that a one-size-fits-all strategy
+            &ldquo;exposes patients to avoidable risk at both ends of the spectrum.&rdquo;
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">ESC 0/1h Algorithm: Meta-Analysis of 30,000+ Patients</h4>
+          <p><strong>Chiang CH, Pickering JW, et al.</strong> Performance of ESC 0/1-Hour, 0/2-Hour, and 0/3-Hour Algorithms for Rapid Triage of AMI: International Collaborative Meta-analysis.
+            <em>Annals of Internal Medicine</em>, 2022;175(1). PMID: 34807719</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            Pooled data from <strong>&gt;30,000 patients</strong>: ESC 0/1h algorithm achieved
+            <span class="stat-highlight">sensitivity 99.1%, NPV 99.8%</span> for ruling out AMI.
+            The algorithm safely rules out MI within 1 hour for <strong>~60% of chest pain presentations</strong>.
+            NICE NG185 still defaults to a 0/3h pathway &mdash; an evidence-practice gap of ~5 years since the ESC adopted the 0/1h algorithm.
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">ESC vs NICE: Coronary Artery Disease Risk Scores</h4>
+          <p><strong>Demir OM, Dobson P, Papamichael ND, et al.</strong> Comparison of ESC and NICE guidelines for patients with suspected CAD.
+            <em>Clinical Medicine</em>, 2015;15(3):234&ndash;238. DOI: 10.7861/clinmedicine.15-3-234</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            NICE risk scores overestimated CAD probability by <span class="stat-highlight warning">18.4% vs ESC</span> (66.3% vs 47.9%, p&lt;0.0001).
+            In &ldquo;high-risk&rdquo; patients the divergence widened to <strong>24.3%</strong>. Higher NICE scores drive recommendations
+            for invasive coronary angiography (ICA at &pound;1,241) rather than CT angiography (CTCA at &pound;164) &mdash;
+            a significant cost and safety implication. The authors conclude that both models are based on <strong>30&ndash;40 year old tertiary centre data</strong>
+            that overestimates contemporary disease prevalence.
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">Stable Angina: NICE vs ESC Revascularisation Criteria</h4>
+          <p><strong>Archbold RA.</strong> Comparison between NICE and ESC guidelines for stable angina: implications for clinical practice.
+            <em>Open Heart</em>, 2016;3:e000406. DOI: 10.1136/openhrt-2016-000406</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            ESC includes <strong>proximal LAD disease</strong> as a revascularisation indication; NICE does not (limited to left main stem/3-vessel).
+            Patients with proximal LAD disease are <strong>less likely to undergo revascularisation under NICE vs ESC</strong>.
+            NICE also rejects exercise ECG testing entirely, while ESC permits it when imaging is unavailable.
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--teal);margin-bottom:1rem;">
+          <h4 style="color:var(--navy);">Cardiac Rehabilitation: National Audit 2024 — Persistent Inequalities</h4>
+          <p><strong>NACR Quality and Outcomes Report 2024</strong>. + <strong>European Journal of Preventive Cardiology</strong>, 2025 (Health inequalities in CR).</p>
+          <p style="margin-top:0.5rem;font-size:0.88rem;color:var(--gray-700);">
+            Only <span class="stat-highlight warning">50% of eligible patients</span> take up cardiac rehabilitation in England.
+            Of those, 76% complete the programme. Only <strong>51% of the 184 CR programmes</strong> achieved NACR certification in 2024.
+            Participation by ethnicity: White British 79%, Asian Bangladeshi 0.6%, Black African 0.3%, Chinese 0.1%.
+            NHS England target is 85% uptake by 2028 &mdash; <strong>current performance is half that target</strong>.
+            NICE guidance is aspirational (&ldquo;offer CR&rdquo;) rather than operational, with no mandated referral pathway, equity KPIs, or digital alternatives.
+          </p>
+        </div>
+
+        <div class="detail-block evidence" style="border-left:4px solid var(--red);margin-bottom:1rem;background:var(--red-bg);">
+          <h4 style="color:var(--red);">Statistical Deep-Dive: Quantifying the ACS Critique</h4>
+          <p style="font-size:0.88rem;color:var(--gray-700);">
+            Synthesised metrics from published critiques, national audits, and computed trial data:
+          </p>
+          <table class="data-table">
+            <thead>
+              <tr><th>Metric</th><th>Value</th><th>Source / Derivation</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IMPROVE-IT to full NICE integration</td>
+                <td><strong>~8 years</strong> (91 months)</td>
+                <td>NEJM Jun 2015 &rarr; NICE pathway update ~2023; Khan &amp; Rakhit, BJC 2022</td>
+              </tr>
+              <tr>
+                <td>LDL target gap (NICE vs ESC)</td>
+                <td><strong>0.4 mmol/L</strong> (1.8 vs 1.4)</td>
+                <td>Khan &amp; Rakhit 2022; translates to ~9% additional MACE reduction (CTT: 22%/mmol/L &times; 0.4)</td>
+              </tr>
+              <tr>
+                <td>Patients NOT reaching even NICE's less strict target</td>
+                <td><span class="stat-highlight warning">70%</span></td>
+                <td>EUROASPIRE V: only 30% at LDL &lt;1.8 mmol/L at 1 year</td>
+              </tr>
+              <tr>
+                <td>Preventable MACE events/year from LDL gap (theoretical maximum)</td>
+                <td><span class="stat-highlight warning">~6,160/year</span></td>
+                <td>70,000 ACS/yr &times; 0.4 mmol/L gap &times; 22% per mmol/L (CTT). <em>Theoretical maximum assuming all patients reach their respective targets; realistic estimate ~1,000&ndash;1,500 (15% at 1.4&ndash;1.8 range per EUROASPIRE V)</em></td>
+              </tr>
+              <tr>
+                <td>Lipid recheck delay (NICE vs ESC)</td>
+                <td><strong>6&ndash;8 weeks later</strong></td>
+                <td>NICE: 3 months; ESC: 4&ndash;6 weeks. Delays intensification by 50%.</td>
+              </tr>
+              <tr>
+                <td>ED patient-hours saved by 0/1h vs 0/3h pathway</td>
+                <td><strong>~600,000/year</strong></td>
+                <td>500K chest pain &times; 60% eligible &times; 2h saved = 600K patient-hours</td>
+              </tr>
+              <tr>
+                <td>ESC 0/1h algorithm sensitivity (meta-analysis)</td>
+                <td><strong>99.1%</strong> (NPV 99.8%)</td>
+                <td>Pickering et al., Ann Int Med 2021; &gt;30,000 patients pooled</td>
+              </tr>
+              <tr>
+                <td>NICE CAD risk overestimation vs ESC</td>
+                <td><strong>+18.4%</strong> (p&lt;0.0001)</td>
+                <td>Demir et al. 2015; mean 66.3% vs 47.9%; drives unnecessary ICA at &pound;1,241</td>
+              </tr>
+              <tr>
+                <td>MINOCA prevalence (unguided by NICE)</td>
+                <td><strong>3,500&ndash;7,000/year</strong></td>
+                <td>5&ndash;10% of ~70,000 ACS admissions/year; 0 NICE guidance items</td>
+              </tr>
+              <tr>
+                <td>Cardiac rehab uptake vs NHS target</td>
+                <td><strong>50% vs 85% target</strong> (35 percentage point gap)</td>
+                <td>NACR 2024; target set for 2028</td>
+              </tr>
+              <tr>
+                <td>CR ethnic minority participation</td>
+                <td><strong>0.1&ndash;0.6%</strong> for non-White groups</td>
+                <td>NACR 2024; White British 79% vs Chinese 0.1%</td>
+              </tr>
+              <tr>
+                <td>NICE ACS feature score vs ESC</td>
+                <td><strong>1/20 vs 17/20</strong></td>
+                <td>10 features scored 0&ndash;2: NICE 1 partial, ESC 8 comprehensive + 1 partial</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.82rem;color:var(--gray-500);margin-top:0.75rem;">
+            <strong>Aggregate impact summary:</strong> These metrics are dimensionally distinct and cannot be summed:
+            (1) <strong>~1,000&ndash;6,160 preventable MACE/year</strong> from the LDL target gap;
+            (2) <strong>~600,000 patient-hours/year</strong> of avoidable ED occupancy from slower troponin pathways;
+            (3) <strong>~3,500&ndash;7,000 MINOCA patients/year</strong> without a structured NICE diagnostic or treatment pathway.
+            Each represents an independent dimension of guideline inadequacy affecting tens of thousands of patients annually.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Statistical Analysis -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Live Statistical Analysis</h2>
+        <p>Every number below is computed in your browser. Forest plots, pooled estimates, and Bayesian posteriors generated client-side.</p>
+      </div>
+      <div id="stats-engine-acs"></div>
+
+      <!-- Optional WebR Validation -->
+      <div class="webr-panel">
+        <h4>R Validation (Optional)</h4>
+        <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:0.75rem;">
+          Load WebR to independently validate meta-analytic computations using the <code>metafor</code> R package.
+          WebR (~20 MB) only loads when you click the button.
+        </p>
+        <button class="webr-btn" id="load-webr-acs" onclick="loadWebR('acs')">Load WebR &amp; Validate with metafor</button>
+        <div id="webr-output-acs" class="webr-output" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Analytics -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Advanced Mathematical Analytics</h2>
+        <p>13 additional statistical methods computed client-side from trial data.</p>
+      </div>
+      <div id="advanced-stats-acs"></div>
+    </div>
+  </section>
+
+  <!-- NYT Charts V2 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Extended Visualisations</h2>
+        <p>Radar charts, heat matrices, beeswarm plots, and more.</p>
+      </div>
+      <div id="nyt-charts-v2-acs"></div>
+    </div>
+  </section>
+
+  <!-- CT.gov Registry Data -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>ClinicalTrials.gov Registry Data</h2>
+        <p>Structured metadata for every trial cited in this critique.</p>
+      </div>
+      <div id="ctgov-data-acs"></div>
+    </div>
+  </section>
+
+  <!-- Evidence Triangulation -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Evidence Triangulation</h2>
+        <p>Cross-referencing independent data sources to test convergence of the NICE critique.</p>
+      </div>
+      <div id="triangulation-acs"></div>
+    </div>
+  </section>
+
+  <!-- Final Advanced Methods (10 new methods) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Final Advanced Methods</h2>
+        <p>10 additional statistical methods applied to lipid-lowering trial data: Monte Carlo simulation, counterfactual access modelling, Markov QALY, E-values, network meta-analysis, guideline adoption survival, fail-safe N, trim-and-fill, Bayesian model averaging, and power prior.</p>
+      </div>
+      <div id="final-methods-acs"></div>
+    </div>
+  </section>
+
+  <!-- Tools Reference -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Statistical Tools Used in This Analysis</h2>
+        <p>This review draws on a suite of open-source meta-analysis engines and CT.gov registry data.</p>
+      </div>
+      <div class="topic-grid">
+        <div class="why-card">
+          <h4>CT.gov Registry Data</h4>
+          <p>Trial metadata (NCT IDs, enrollment, completion dates, endpoints) from ClinicalTrials.gov API v2. Used to establish evidence availability timelines and quantify the NICE response lag.</p>
+        </div>
+        <div class="why-card">
+          <h4>MetaRegression</h4>
+          <p>Mixed-effects meta-regression with Knapp-Hartung adjustment. Used to test whether DAPT duration is a significant moderator of bleeding and ischaemic outcomes.</p>
+        </div>
+        <div class="why-card">
+          <h4>PubBiasSuite</h4>
+          <p>12 publication bias methods including Egger's test, trim-and-fill, and p-curve analysis. Applied to the CTT Collaboration lipid data to confirm robustness of the 22% per mmol/L estimate.</p>
+        </div>
+        <div class="why-card">
+          <h4>CardioOracle</h4>
+          <p>Bayesian trial outcome predictor trained on 784+ cardiorenal trials. Used to model expected outcomes for the MRA-MI MINOCA trial and assess prior evidence density.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main><!-- /main-content -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>NICE Cardiology Guidance Review &mdash; Acute Coronary Syndromes</p>
+    <p>Created by Dr Mahmood Ahmad &bull; Royal Free Hospital, London</p>
+    <div class="disclaimer">
+      This resource is for educational and research purposes only. It does not constitute medical advice.
+      All statistical claims reference published trial data and open-source computational tools.
+      NICE guidelines are Crown copyright and referenced here under fair dealing for criticism and review.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/nyt-charts.js"></script>
+  <script src="js/stats-engine.js"></script>
+  <script src="js/webr-validation.js"></script>
+  <script src="js/advanced-stats.js"></script>
+  <script src="js/nyt-charts-v2.js"></script>
+  <script src="js/ctgov-live.js"></script>
+  <script src="js/triangulation.js"></script>
+  <script src="js/final-methods.js"></script>
+</body>
+</html>
