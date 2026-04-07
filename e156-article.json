@@ -1,0 +1,31 @@
+{
+  "id": "NICECardiology",
+  "title": "NICE Cardiology Guidance Under the Microscope: A Data-Driven Statistical Critique",
+  "authors": [
+    {
+      "name": "Mahmood Ahmad",
+      "affiliation": "Royal Free Hospital, London, United Kingdom",
+      "email": "mahmood.ahmad2@nhs.net",
+      "orcid": "0009-0003-7781-4478"
+    }
+  ],
+  "date": "2026-04-07",
+  "type": "methods",
+  "estimand": "HR",
+  "data_description": "20 Phase 3 SGLT2i trials (28,553 patients), 7 lipid trials (67,254 patients), 5 triangulation sources",
+  "sentences": {
+    "S1_question": "Can client-side meta-analytic computation expose systematic evidence-adoption gaps in national clinical guidelines?",
+    "S2_dataset": "We analysed NICE heart failure and acute coronary syndrome guidelines against 20 completed Phase 3 SGLT2 inhibitor trials enrolling 28,553 patients and 7 post-ACS lipid trials enrolling 67,254 patients, cross-referencing CT.gov registry data, EMA/FDA/WHO regulatory timelines, NHS prescribing statistics, and six international guideline bodies.",
+    "S3_method": "Forty statistical methods including DerSimonian-Laird pooling, trial sequential analysis, Monte Carlo simulation, Markov QALY modelling, Bayesian model averaging, persistent homology, and E-values were computed entirely client-side in 10,463 lines of dependency-free JavaScript.",
+    "S4_result": "The pooled SGLT2i class-effect HR was 0.79 (95% CI 0.74-0.84, I-squared 28%) across eight trials with Monte Carlo reversal probability below 0.1 percent; NICE ranked last of six guideline bodies in adoption timing.",
+    "S5_robustness": "Fourteen NYT-style canvas charts and on-demand WebR cross-validation with R metafor provide full computational reproducibility.",
+    "S6_interpretation": "All five independent data sources converge on the conclusion that NICE cardiology guidelines exhibited the largest and most prolonged evidence-adoption gap among major international guideline bodies for SGLT2 inhibitors in heart failure.",
+    "S7_boundary": "The analysis cannot account for unpublished NICE cost-effectiveness deliberations or internal regulatory constraints."
+  },
+  "body": "Can client-side meta-analytic computation expose systematic evidence-adoption gaps in national clinical guidelines? We analysed NICE heart failure and acute coronary syndrome guidelines against 20 completed Phase 3 SGLT2 inhibitor trials enrolling 28,553 patients and 7 post-ACS lipid trials enrolling 67,254 patients, cross-referencing CT.gov registry data, EMA/FDA/WHO regulatory timelines, NHS prescribing statistics, and six international guideline bodies. Forty statistical methods including DerSimonian-Laird pooling, trial sequential analysis, Monte Carlo simulation, Markov QALY modelling, Bayesian model averaging, persistent homology, and E-values were computed entirely client-side in 10,463 lines of dependency-free JavaScript. The pooled SGLT2i class-effect HR was 0.79 (95% CI 0.74-0.84, I-squared 28%) across eight trials with Monte Carlo reversal probability below 0.1 percent; NICE ranked last of six guideline bodies in adoption timing. Fourteen NYT-style canvas charts and on-demand WebR cross-validation with R metafor provide full computational reproducibility. All five independent data sources converge on the conclusion that NICE cardiology guidelines exhibited the largest and most prolonged evidence-adoption gap among major international guideline bodies for SGLT2 inhibitors in heart failure. The analysis cannot account for unpublished NICE cost-effectiveness deliberations or internal regulatory constraints.",
+  "word_count": 155,
+  "github": "https://github.com/mahmood726-cyber/nice-cardiology-guidance",
+  "dashboard": "https://mahmood726-cyber.github.io/nice-cardiology-guidance/",
+  "keywords": ["NICE", "cardiology", "heart failure", "SGLT2 inhibitors", "guideline critique", "meta-analysis", "evidence-adoption gap"],
+  "target_journal": "BMJ Evidence-Based Medicine"
+}
