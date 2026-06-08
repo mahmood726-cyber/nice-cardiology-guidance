@@ -569,9 +569,10 @@
     var k = studies.length;
     // For k=2, t critical is 12.706 (df=1), making PI very wide
     // For larger k, use normalQuantile as approximation
-    // Prediction interval uses df = k-2 (Higgins & Thompson 2009)
+    // Prediction interval uses df = k-1 (Cochrane Handbook v6.5, matches metafor predict v4+;
+    // IntHout-2016 / Higgins-Thompson t_{k-2} superseded)
     var tCrit;
-    var df = k - 2;
+    var df = k - 1;
     if (df <= 0) {
       tCrit = 12.706; // pragmatic: df=0 undefined, use df=1 value
     } else if (df === 1) {

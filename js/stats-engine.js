@@ -192,7 +192,8 @@
 
   function predictionInterval(pooledLog, tau2, seLog, k) {
     if (k < 3) return { lo: NaN, hi: NaN };
-    var tcrit = Math.abs(tQuantile(0.025, k - 2));
+    // df = k-1 per Cochrane Handbook v6.5 (matches metafor predict v4+); IntHout-2016 t_{k-2} superseded
+    var tcrit = Math.abs(tQuantile(0.025, k - 1));
     var piSe = Math.sqrt(tau2 + seLog * seLog);
     return { lo: Math.exp(pooledLog - tcrit * piSe), hi: Math.exp(pooledLog + tcrit * piSe) };
   }
